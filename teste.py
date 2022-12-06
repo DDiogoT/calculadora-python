@@ -3,4 +3,4 @@ b = int(input('Digite o segundo número: '))
 
 c = a + b
 
-print(c)
+print(f'{c}')
