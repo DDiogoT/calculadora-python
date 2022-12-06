@@ -1,6 +1,8 @@
+def soma(x, y):
+    return x + y
+
+
 a = int(input('Digite o primeiro número: '))
 b = int(input('Digite o segundo número: '))
 
-c = a + b
-
-print(c)
+print(soma(a, b))
