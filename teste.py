@@ -1,4 +1,6 @@
-a = 3
-b = 2 
+a = int(input('Digite o primeiro número: '))
+b = int(input('Digite o segundo número: '))
 
-print(a + b)
+c = a + b
+
+print(c)
