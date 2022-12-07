@@ -1,10 +1,19 @@
-def soma(x, y):
-    return x + y
+def soma(nums):
+    soma = 0
+    for num in nums:
+        soma += num
+    return soma
+    
 
+lista_numeros = []
 
-a = int(input('Digite o primeiro número: '))
-b = int(input('Digite o segundo número: '))
+while True:
+    q = int(input('Digite o números a ser somado (0 encerra o programa): '))
+    if q == 0:
+        break
+    else:
+        lista_numeros.append(q)
 
-c = soma(a, b)
+s = soma(lista_numeros)
 
-print(f'{c}')
+print(f'{s}')
