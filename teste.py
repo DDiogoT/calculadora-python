@@ -1,19 +1,33 @@
-def soma(nums):
-    soma = 0
-    for num in nums:
-        soma += num
-    return soma
+def soma():
+    x = int(input('\nDigite o primeiro número: '))
+    y = int(input('Digite o segundo número: '))
+    
+    print(f'A soma é {x + y}\n')
+
+
+def sub():
+    x = int(input('\nDigite o primeiro número: '))
+    y = int(input('Digite o segundo número: '))
+    
+    print(f'A subtração é {x - y}\n')
     
 
-lista_numeros = []
-
 while True:
-    q = int(input('Digite o números a ser somado (0 encerra o programa): '))
-    if q == 0:
+    print('Faça uma escolha:')
+    print('1. Adição')
+    print('2. Subtração')
+    print('0. Encerra o programa')
+    
+    n = int(input('Escolha: '))
+
+    if n == 0:
         break
+    
+    elif n == 1:
+        soma()
+    
+    elif n == 2:
+        sub()
+    
     else:
-        lista_numeros.append(q)
-
-s = soma(lista_numeros)
-
-print(f'{s}')
+        print('Escolha fora do desconhecida.')

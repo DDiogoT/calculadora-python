@@ -1,2 +1,2 @@
-# soma
-Programa de soma em Python, utilizando função e print formatado.
+# calculadora
+Programa de calculadora em Python, utilizando funções.
